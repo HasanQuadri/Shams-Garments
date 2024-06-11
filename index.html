@@ -106,23 +106,6 @@
         line-height: 1.5;
         margin: 10px 0;
     }
-
-    .snowflake {
-        position: absolute;
-        top: -10px;
-        background-color: #fff; /* White color for snowflakes */
-        border-radius: 50%;
-        animation: fall linear infinite;
-    }
-
-    @keyframes fall {
-        0% {
-            transform: translateY(0);
-        }
-        100% {
-            transform: translateY(100vh);
-        }
-    }
 </style>
 </head>
 <body>
@@ -135,6 +118,7 @@
                 <li><a href="#age0to7">0-7 Years</a></li>
                 <li><a href="#age8to16">8-16 Years</a></li>
                 <li><a href="#address">Our Address</a></li>
+                <li><a href="#contact us">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -183,27 +167,9 @@
     
     <footer>
         <p>Contact us:</p>
-        <a href="whatsapp://send?phone=whatsappnumber"><i class="fab fa-whatsapp"></i></a>
-        <a href="mailto:youremail@example.com"><i class="far fa-envelope"></i></a>
-        <a href="https://www.instagram.com/yourinstagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:ruhanquadri17@gmail.com"><i class="far fa-envelope"></i></a>
+        <a href="https://www.instagram.com/hasan_quadri_37/"><i class="fab fa-instagram"></i></a>
     </footer>
-
-    <script>
-        function createSnowflake() {
-            const snowflake = document.createElement('div');
-            snowflake.classList.add('snowflake');
-            snowflake.style.left = Math.random() * window.innerWidth + 'px';
-            snowflake.style.width = Math.random() * 8 + 5 + 'px'; // Increased size
-            snowflake.style.height = snowflake.style.width;
-            snowflake.style.animationDuration = Math.random() * 10 + 5 + 's'; // Slower speed
-            document.body.appendChild(snowflake);
-
-            setTimeout(() => {
-                snowflake.remove();
-            }, 15000); // Extended duration to match slower speed
-        }
-
-        setInterval(createSnowflake, 200);
-    </script>
 </body>
 </html>
