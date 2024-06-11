@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shams Garments</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: #fff;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    header h1 {
+        display: inline;
+        vertical-align: middle;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    main {
+        padding: 20px;
+        padding-top: 120px; /* Increased to push content lower */
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    footer a {
+        display: inline-block;
+        margin: 0 10px;
+        color: #fff;
+        font-size: 24px;
+    }
+
+    footer ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    section h2 {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    section ul li {
+        margin-bottom: 5px;
+    }
+
+    #address {
+        background-color: #f8f8f8;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+        color: #000;
+    }
+
+    #address p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 10px 0;
+    }
+
+    .snowflake {
+        position: absolute;
+        top: -10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(100vh);
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Shams Garments</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#age0to7">0-7 Years</a></li>
+                <li><a href="#age8to16">8-16 Years</a></li>
+                <li><a href="#address">Our Address</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Shams Garments, your go-to destination for stylish and comfortable clothing for children aged 0-14 years. At Shams Garments, we understand that dressing your little ones is not just about style, but also about comfort and quality. That's why we handpick each item in our collection to ensure it meets our standards of excellence.</p>
+            <p>Our mission is to make shopping for kids' clothing hassle-free and enjoyable for parents. We offer a wide range of options, from casual wear to party outfits, all at affordable prices. Whether you're looking for everyday essentials or special occasion wear, you'll find it at Shams Garments.</p>
+            <p>Customer satisfaction is our top priority, and we strive to provide exceptional service at every step. From browsing our website to receiving your order, we want your experience with us to be seamless and enjoyable.</p>
+            <p>Thank you for choosing Shams Garments for your kids' clothing needs. We look forward to helping you dress your little ones in style!</p>
+        </section>
+        
+        <section id="categories">
+            <h2>Categories</h2>
+            <ul>
+            </ul>
+        </section>
+        <section id="age0to7">
+            <h2>0-7 Years</h2>
+            <li><a href="0-7years.html">View 0-7 Years Collection</a></li>
+        </section>
+        <section id="age8to16">
+            <h2>8-16 Years</h2>
+            <li><a href="8-16years.html">View 8-16 Years Collection</a></li>
+        </section>
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <ul>
+                <li>"Great quality clothing at reasonable prices. My kids love them!"</li>
+                <li>"Fast shipping and excellent customer service. Will definitely buy again!"</li>
+            </ul>
+        </section>
+        <section id="promise">
+            <h2>Our Promise</h2>
+            <p>At Shams Garments, we are committed to providing the best shopping experience for you and your children. Our promise is to offer stylish and comfortable clothing at affordable prices, along with exceptional customer service.</p>
+        </section>
+        <section id="address">
+            <h2>Our Address</h2>
+            <p>Shams Garments<br>
+            Tipu Sultan Road Beside Sumaiya Collection<br>
+            Raichur, Karnataka, 584101<br>
+            India</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Contact us:</p>
+        <a href="whatsapp://send?phone=whatsappnumber"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:youremail@example.com"><i class="far fa-envelope"></i></a>
+        <a href="https://www.instagram.com/yourinstagram"><i class="fab fa-instagram"></i></a>
+    </footer>
+
+    <script>
+        function createSnowflake() {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.style.left = Math.random() * window.innerWidth + 'px';
+            snowflake.style.width = Math.random() * 8 + 5 + 'px'; // Increased size
+            snowflake.style.height = snowflake.style.width;
+            snowflake.style.animationDuration = Math.random() * 10 + 5 + 's'; // Slower speed
+            document.body.appendChild(snowflake);
+
+            setTimeout(() => {
+                snowflake.remove();
+            }, 15000); // Extended duration to match slower speed
+        }
+
+        setInterval(createSnowflake, 200);
+    </script>
+</body>
+</html>
